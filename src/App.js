@@ -1,11 +1,17 @@
-import React from 'react';
+import React ,{Fragment}from 'react';
 import './App.css';
+import Header from './header'
+import Movie from './movie'
 
 function App() {
   return (
-    <div className="App">
-
-    </div>
+    <Fragment>
+      <Header/>
+      <Movie/>
+      <Movie/>
+      <Movie/>
+      <Movie/>
+    </Fragment>
   );
 }
 
