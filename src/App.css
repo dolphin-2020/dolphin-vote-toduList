@@ -1,43 +1,168 @@
-#header{
+#header {
   position: relative;
-  width:100%;
-  height:100px;
-  background-color: #6e5633;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(0, 153, 255);
   text-align: center;
   margin-bottom: 30px;
 }
 
-#headText{
+#headText {
   position: absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  color:white;
-  font-size:40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 40px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin:auto;
+  margin: auto;
 }
-.outDiv{
-  display:inline-block;
+
+#displayDiv {
+  width: 45%;
+  float: left;
 }
-.movie{
-  margin:0 20px;
-  float:left;
-  width:16%;
+
+#inputMovie {
+  width: 79%;
+  height: 40px;
+  ;
 }
-.post{
-  width:100%;
+
+#submitSearch {
+  background-color: rgb(0, 153, 255);
+  color: white;
+  height: 46px;
+  width: 20%;
+  border: none;
 }
-.content{
-  float:left;
-  display:block;
-  width:25%;
+
+.outDiv {
+  width: 100%;
+  display: inline-block;
+  border: 1px solid lightgray;
+  margin-bottom: 15px;
+  margin-left: 15px;
 }
-.add{
-  width:25px;
+
+.post {
+  width: 40%;
+  float: left;
 }
-.headerImg{
-  width:30px;
-  height:30px;
-  border-radius:50px;
+
+.content {
+  float: right;
+  display: block;
+  width: 50%;
+}
+
+.add {
+  width: 25px;
+}
+
+.headerImg {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  margin-left: 10px;
+
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(0, 110, 255);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.submitBy {
+  color: gray;
+}
+
+#searchMovie {
+  width: 50%;
+  float: right;
+  display: block;
+  margin-right: 15px;
+}
+
+.moviesName {
+  line-height: 20px;
+}
+
+.displayMovies {
+  display: block;
+  border: 1px solid lightgray;
+  margin-bottom: 30px;
+
+}
+
+.pic {
+  width: 120px;
+  height:180px;
+}
+
+.moviesInfo {
+  width: 75%;
+  float: right;
+  height: 200px;
+  margin-right: 15px;
+  ;
+}
+
+.addToComment {
+  width: 80%;
+  background-color: rgb(0, 153, 255);
+  color: white;
+  margin: auto;
+  border: none;
+  height: 30px;
+
+}
+
+.addInfo {
+  color: gray;
+  font-size: 14px;
+}
+
+.searchWholePage {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.back {
+  float: left;
+  background-color: white;
+  color: rgb(0, 153, 255);
+  border-radius: 20px;
+  width: 60px;
+  border: none;
+  font-size: 20px;
+}
+
+.go {
+  border: none;
+  float: right;
+  background-color: white;
+  color: rgb(0, 153, 255);
+  border-radius: 20px;
+  width: 60px;
+  font-size: 20px;
+}
+
+.showPageBtn {
+  border: none;
+  background-color: white;
+}
+
+.showPageBtn:visited{
+  color: lightblue;
+}
+
+.deleteVote {
+  color: lightgray;
+  font-size:20px;
 }
