@@ -26,7 +26,7 @@ const RightDisplay=(props)=>{
           className="showPageBtn"
           onClick={props.pageChoose}
         >
-          {parseInt(props.nextPage) + index}
+          {parseInt(props.StateNextPage) + index}
         </button>
       );
     })}
@@ -47,7 +47,7 @@ const RightDisplay=(props)=>{
           </p>
           <button
             className="addToComment"
-            onClick={()=>{props.addVoteMovie.bind(this, index)}}
+            onClick={()=>{props.addVoteMovie(index)}}
           >
             Vote this movie
           </button>
@@ -66,7 +66,7 @@ const RightDisplay=(props)=>{
           className="showPageBtn"
           onClick={props.pageChoose}
         >
-          {parseInt(props.nextPage) + index}
+          {parseInt(props.StateNextPage) + index}
         </button>
       );
     })}
