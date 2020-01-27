@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import "./App.css";
 import Header from './header'
-// import Movie from './movie'
+import RightList from './rightDisplay'
 import LeftDisplay from './leftDisplay'
 import Axios from "axios";
 
@@ -229,6 +229,16 @@ class App extends Component {
           addVote={this.addVote.bind(this)}
           deleteVote={this.deleteVote.bind(this)}
         />
+        <RightList
+          searchMovieInput={this.searchMovieInput}
+          searchVal={this.state.searchVal}
+          searchMovBtn={this.searchMovBtn}
+          forePage={this.forePage}
+          pageChoose={this.pageChoose}
+          nextPage={this.state.nextPage}
+          movies={this.state.movies}
+          addVoteMovie={this.addVoteMovie}
+        />
        {
          /*
           <div id="displayDiv">
@@ -275,7 +285,7 @@ class App extends Component {
 
           */
        }
-      
+      {/*
         <div id="searchMovie">
           <input
             id="inputMovie"
@@ -350,6 +360,7 @@ class App extends Component {
             </button>
           </div>
         </div>
+        */}
       </Fragment>
     );
   }
